@@ -1,0 +1,4 @@
+C:\dev\ReservasHotel\ReservasHotel.Persistencia\bin\Debug\ReservasHotel.Persistencia.dll
+C:\dev\ReservasHotel\ReservasHotel.Persistencia\bin\Debug\ReservasHotel.Persistencia.pdb
+C:\dev\ReservasHotel\ReservasHotel.Persistencia\obj\Debug\ReservasHotel.Persistencia.dll
+C:\dev\ReservasHotel\ReservasHotel.Persistencia\obj\Debug\ReservasHotel.Persistencia.pdb

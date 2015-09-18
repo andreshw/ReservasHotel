@@ -1,0 +1,24 @@
+﻿@model ReservasHotel.Presentacion.Models.Habitacion
+
+@{
+    ViewBag.Title = "CrearHabitacion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var fechaActual = DateTime.Now;
+    ViewBag.fecha = fechaActual;
+}
+
+<h2>CrearHabitacion</h2>
+
+@ViewBag.fecha
+
+<form>
+
+</form>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
