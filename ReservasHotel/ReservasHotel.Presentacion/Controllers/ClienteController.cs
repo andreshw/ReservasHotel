@@ -33,5 +33,13 @@ namespace ReservasHotel.Presentacion.Controllers
             IList<Cliente> clientes = repositorio.ConsultarClientes();
             return View("Index", clientes);
         }
+
+        [HttpGet]
+        public ActionResult EditarCliente(int id)
+        {
+            ClienteRepositorio repositorio = new ClienteRepositorio();
+            Cliente cliente = repositorio.ConsultarClientePorId(id);
+            return View(cliente);
+        }
 	}
 }
