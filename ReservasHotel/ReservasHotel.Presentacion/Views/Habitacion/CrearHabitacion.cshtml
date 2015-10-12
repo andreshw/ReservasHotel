@@ -1,19 +1,68 @@
-﻿@model ReservasHotel.Presentacion.Models.Habitacion
+﻿@model ReservasHotel.Persistencia.Entidades.Habitacion
 
 @{
     ViewBag.Title = "CrearHabitacion";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    var fechaActual = DateTime.Now;
-    ViewBag.fecha = fechaActual;
 }
 
 <h2>CrearHabitacion</h2>
 
-@ViewBag.fecha
 
-<form>
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Habitacion</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        <div class="form-group">
+            @Html.LabelFor(model => model.NumeroHabitacion, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NumeroHabitacion)
+                @Html.ValidationMessageFor(model => model.NumeroHabitacion)
+            </div>
+        </div>
 
-</form>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Capacidad, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Capacidad)
+                @Html.ValidationMessageFor(model => model.Capacidad)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TipoHabitacion, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TipoHabitacion)
+                @Html.ValidationMessageFor(model => model.TipoHabitacion)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TieneVistaMarBien, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TieneVistaMarBien)
+                @Html.ValidationMessageFor(model => model.TieneVistaMarBien)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Descripcion, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Descripcion)
+                @Html.ValidationMessageFor(model => model.Descripcion)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
 
 <div>
     @Html.ActionLink("Back to List", "Index")

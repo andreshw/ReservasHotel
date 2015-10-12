@@ -2,3 +2,13 @@ C:\dev\ReservasHotel\ReservasHotel.Persistencia\bin\Debug\ReservasHotel.Persiste
 C:\dev\ReservasHotel\ReservasHotel.Persistencia\bin\Debug\ReservasHotel.Persistencia.pdb
 C:\dev\ReservasHotel\ReservasHotel.Persistencia\obj\Debug\ReservasHotel.Persistencia.dll
 C:\dev\ReservasHotel\ReservasHotel.Persistencia\obj\Debug\ReservasHotel.Persistencia.pdb
+C:\dev\Universidad\Enfasis20152\ReservasHotel\ReservasHotel\ReservasHotel.Persistencia\obj\Debug\ReservasHotel.Persistencia.csprojResolveAssemblyReference.cache
+C:\dev\Universidad\Enfasis20152\ReservasHotel\ReservasHotel\ReservasHotel.Persistencia\obj\Debug\ReservasHotel.Persistencia.dll
+C:\dev\Universidad\Enfasis20152\ReservasHotel\ReservasHotel\ReservasHotel.Persistencia\obj\Debug\ReservasHotel.Persistencia.pdb
+C:\dev\Universidad\Enfasis20152\ReservasHotel\ReservasHotel\ReservasHotel.Persistencia\bin\Debug\ReservasHotel.Persistencia.dll.config
+C:\dev\Universidad\Enfasis20152\ReservasHotel\ReservasHotel\ReservasHotel.Persistencia\bin\Debug\ReservasHotel.Persistencia.dll
+C:\dev\Universidad\Enfasis20152\ReservasHotel\ReservasHotel\ReservasHotel.Persistencia\bin\Debug\ReservasHotel.Persistencia.pdb
+C:\dev\Universidad\Enfasis20152\ReservasHotel\ReservasHotel\ReservasHotel.Persistencia\bin\Debug\EntityFramework.dll
+C:\dev\Universidad\Enfasis20152\ReservasHotel\ReservasHotel\ReservasHotel.Persistencia\bin\Debug\EntityFramework.SqlServer.dll
+C:\dev\Universidad\Enfasis20152\ReservasHotel\ReservasHotel\ReservasHotel.Persistencia\bin\Debug\EntityFramework.xml
+C:\dev\Universidad\Enfasis20152\ReservasHotel\ReservasHotel\ReservasHotel.Persistencia\bin\Debug\EntityFramework.SqlServer.xml

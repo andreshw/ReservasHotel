@@ -168,8 +168,10 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\ClienteRepositorio.cs" />
+    <Compile Include="Models\DetalleReserva.cs" />
     <Compile Include="Models\Habitacion.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Reserva.cs" />
     <Compile Include="Models\ReservasHotelDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -224,8 +226,11 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Cliente\Index.cshtml" />
     <Content Include="Views\Cliente\CrearCliente.cshtml" />
-    <Content Include="Views\Habitacion\CrearHabitacion.cshtml" />
     <Content Include="Views\Cliente\EditarCliente.cshtml" />
+    <Content Include="Views\Cliente\BuscarClientes.cshtml" />
+    <Content Include="Views\Habitacion\ListarHabitaciones.cshtml" />
+    <Content Include="Views\Habitacion\EditarHabitacion.cshtml" />
+    <Content Include="Views\Habitacion\CrearHabitacion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -237,6 +242,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ReservasHotel.Persistencia\ReservasHotel.Persistencia.csproj">
+      <Project>{04d87a65-4f4b-484e-9b14-f40f5530b0f4}</Project>
+      <Name>ReservasHotel.Persistencia</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

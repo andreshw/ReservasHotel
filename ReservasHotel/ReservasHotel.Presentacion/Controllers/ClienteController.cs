@@ -1,4 +1,5 @@
-﻿using ReservasHotel.Presentacion.Models;
+﻿using ReservasHotel.Persistencia.Entidades;
+using ReservasHotel.Persistencia.Repositorios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,10 +12,19 @@ namespace ReservasHotel.Presentacion.Controllers
     {
         //
         // GET: /Cliente/
-        public ActionResult Index()
+        public ActionResult Index(string nombreCliente)
         {
             ClienteRepositorio repositorio = new ClienteRepositorio();
-            IList<Cliente> clientes = repositorio.ConsultarClientes();
+            IList<Cliente> clientes = new List<Cliente>();
+
+            if (String.IsNullOrEmpty(nombreCliente))
+            {
+                clientes = repositorio.ConsultarClientes();
+            }
+            else
+            {
+                clientes = repositorio.ConsultarClientePorNombre(nombreCliente);
+            }
             return View(clientes);
         }
 
@@ -40,6 +50,15 @@ namespace ReservasHotel.Presentacion.Controllers
             ClienteRepositorio repositorio = new ClienteRepositorio();
             Cliente cliente = repositorio.ConsultarClientePorId(id);
             return View(cliente);
+        }
+
+        public ActionResult EditarCliente(Cliente cliente)
+        {
+            ClienteRepositorio repositorio = new ClienteRepositorio();
+            repositorio.EditarCliente(cliente);
+
+            IList<Cliente> clientes = repositorio.ConsultarClientes();
+            return View("Index", clientes);
         }
 	}
 }

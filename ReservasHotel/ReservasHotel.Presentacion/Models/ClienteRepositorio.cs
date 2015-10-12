@@ -78,5 +78,14 @@ namespace ReservasHotel.Presentacion.Models
                 return cliente;
             }
         }
+
+        public List<Cliente> ConsultarClientePorNombre(string nombreCliente)
+        {
+            using (ReservasHotelDB contexto = new ReservasHotelDB())
+            {
+                List<Cliente> clientes = contexto.Clientes.Where(c => c.Nombres.Contains(nombreCliente)).ToList();
+                return clientes;
+            }
+        }
     }
 }

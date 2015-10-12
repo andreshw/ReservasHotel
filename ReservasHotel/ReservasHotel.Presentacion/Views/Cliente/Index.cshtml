@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ReservasHotel.Presentacion.Models.Cliente>
+﻿@model IEnumerable<ReservasHotel.Persistencia.Entidades.Cliente>
 
 @{
     ViewBag.Title = "Index";
@@ -14,6 +14,12 @@
 <p>
     @Html.ActionLink("Crear nuevo cliente", "CrearCliente")
 </p>
+@using (Html.BeginForm("Index", "Cliente", FormMethod.Get))
+{
+    <input type="text" name="nombreCliente" />
+    <br />
+    <input type="submit" value="buscar" />
+}
 <table class="table">
     <tr>
         <th>
