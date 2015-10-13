@@ -32,7 +32,7 @@ namespace ReservasHotel.Persistencia.Repositorios
         {
             using (ReservasHotelDB contexto = new ReservasHotelDB())
             {
-                Cliente cliente = contexto.Clientes.FirstOrDefault(c => c.Id == idCliente);
+                Cliente cliente = contexto.Clientes.Include("Reservas").FirstOrDefault(c => c.Id == idCliente);
                 return cliente;
             }
         }

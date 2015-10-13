@@ -13,6 +13,8 @@ namespace ReservasHotel.Persistencia.Entidades
         public int Capacidad { get; set; }
         public string TipoHabitacion { get; set; }
         public bool TieneVistaMarBien { get; set; }
-        public string Descripcion { get; set; } 
+        public string Descripcion { get; set; }
+
+        public bool Ocupada { get; set; }
     }
 }

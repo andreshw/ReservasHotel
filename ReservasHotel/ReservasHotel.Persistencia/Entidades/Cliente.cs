@@ -8,6 +8,11 @@ namespace ReservasHotel.Persistencia.Entidades
 {
     public class Cliente
     {
+        public Cliente()
+        {
+            this.Reservas = new List<Reserva>();
+        }
+
         public int Id { get; set; }
 
         public string NumeroIdentificacion { get; set; }
@@ -23,5 +28,7 @@ namespace ReservasHotel.Persistencia.Entidades
         public string Direccion { get; set; }
 
         public string Telefono { get; set; }
+
+        public virtual List<Reserva> Reservas { get; set; }
     }
 }

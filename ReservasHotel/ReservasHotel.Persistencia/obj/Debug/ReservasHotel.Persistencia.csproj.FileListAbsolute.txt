@@ -12,3 +12,5 @@ C:\dev\Universidad\Enfasis20152\ReservasHotel\ReservasHotel\ReservasHotel.Persis
 C:\dev\Universidad\Enfasis20152\ReservasHotel\ReservasHotel\ReservasHotel.Persistencia\bin\Debug\EntityFramework.SqlServer.dll
 C:\dev\Universidad\Enfasis20152\ReservasHotel\ReservasHotel\ReservasHotel.Persistencia\bin\Debug\EntityFramework.xml
 C:\dev\Universidad\Enfasis20152\ReservasHotel\ReservasHotel\ReservasHotel.Persistencia\bin\Debug\EntityFramework.SqlServer.xml
+C:\dev\Universidad\Enfasis20152\ReservasHotel\ReservasHotel\ReservasHotel.Persistencia\obj\Debug\ReservasHotel.Persistencia.Migrations.InitialCreate.resources
+C:\dev\Universidad\Enfasis20152\ReservasHotel\ReservasHotel\ReservasHotel.Persistencia\obj\Debug\ReservasHotel.Persistencia.csproj.GenerateResource.Cache

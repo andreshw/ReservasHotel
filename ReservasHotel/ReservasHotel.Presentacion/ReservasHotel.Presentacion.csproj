@@ -162,6 +162,7 @@
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HabitacionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReservaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -231,6 +232,8 @@
     <Content Include="Views\Habitacion\ListarHabitaciones.cshtml" />
     <Content Include="Views\Habitacion\EditarHabitacion.cshtml" />
     <Content Include="Views\Habitacion\CrearHabitacion.cshtml" />
+    <Content Include="Views\Cliente\VerDetalleCliente.cshtml" />
+    <Content Include="Views\Reserva\CrearReserva.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

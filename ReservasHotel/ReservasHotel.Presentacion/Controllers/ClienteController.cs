@@ -52,6 +52,7 @@ namespace ReservasHotel.Presentacion.Controllers
             return View(cliente);
         }
 
+        [HttpPost]
         public ActionResult EditarCliente(Cliente cliente)
         {
             ClienteRepositorio repositorio = new ClienteRepositorio();
@@ -59,6 +60,13 @@ namespace ReservasHotel.Presentacion.Controllers
 
             IList<Cliente> clientes = repositorio.ConsultarClientes();
             return View("Index", clientes);
+        }
+
+        public ActionResult VerDetalleCliente(int id)
+        {
+            ClienteRepositorio repositorio = new ClienteRepositorio();
+            Cliente cliente = repositorio.ConsultarClientePorId(id);
+            return View(cliente);
         }
 	}
 }
